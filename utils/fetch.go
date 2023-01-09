@@ -44,5 +44,5 @@ func Fetch(url string, fileName string) error {
 		return err
 	}
 
-	return nil
+	return file.Sync()
 }
